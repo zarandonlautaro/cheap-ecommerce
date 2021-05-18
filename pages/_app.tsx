@@ -96,11 +96,7 @@ const App: React.FC<AppProps> = ({Component, pageProps}) => {
           <Divider marginY={4} />
           {/* Inicio de copyright - Cambiar el contenido de los mismos viola el contenido de los terminos de licencia */}
           <Text textAlign="center">
-            © Copyright {new Date().getFullYear()}. Hecho con ♥ para la comunidad, por{" "}
-            <Link isExternal href="https://gonzalopozzo.com">
-              goncy
-            </Link>
-            .
+            © Copyright {new Date().getFullYear()}. Hecho con ♥ para Ingenieria del software. .
           </Text>
           {/* Fin de copyright */}
         </Container>

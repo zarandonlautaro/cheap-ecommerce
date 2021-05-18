@@ -31,9 +31,10 @@ const CartDrawer: React.FC<Props> = ({items, onClose, onDecrement, onIncrement, 
       parseCurrency(items.reduce((total, product) => total + product.price * product.quantity, 0)),
     [items],
   );
-  const quantity = React.useMemo(() => items.reduce((acc, item) => acc + item.quantity, 0), [
-    items,
-  ]);
+  const quantity = React.useMemo(
+    () => items.reduce((acc, item) => acc + item.quantity, 0),
+    [items],
+  );
   const text = React.useMemo(
     () =>
       items
@@ -137,7 +138,7 @@ const CartDrawer: React.FC<Props> = ({items, onClose, onDecrement, onIncrement, 
                   as={Link}
                   colorScheme="whatsapp"
                   data-testid="complete-order"
-                  href={`https://wa.me/5491141414141?text=${encodeURIComponent(text)}`}
+                  href={`https://wa.me/2615105881?text=${encodeURIComponent(text)}`}
                   leftIcon={
                     <Image src="https://icongr.am/fontawesome/whatsapp.svg?size=24&color=ffffff" />
                   }
